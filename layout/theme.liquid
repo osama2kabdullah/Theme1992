@@ -1,0 +1,13 @@
+<html>
+  <head>
+    {{ content_for_header }}
+    {{ 'application.css' | asset_url | stylesheet_tag }}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+  </head>
+  <body>
+    {% section 'header' %}
+    {{ content_for_layout }}
+    {% section 'footer' %}
+  </body>
+</html>
+
