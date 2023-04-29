@@ -1,3 +1,13 @@
 <header>
-header
+  <h5>{{ shop.name }}</h5>
+  <ul>
+    {% for link in linklists['main-menu'].links -%}
+      <li>{{ link.title | link_to: link.url }}</li>
+    {% endfor %}
+  </ul>
+
+  <form action="/search">
+    <input type="search" name="q">
+    <button type="submit">Search</button>
+  </form>
 </header>
