@@ -522,20 +522,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.collapse {
-  visibility: collapse !important;
-}
-
 .absolute {
   position: absolute !important;
 }
 
 .relative {
   position: relative !important;
-}
-
-.isolate {
-  isolation: isolate !important;
 }
 
 .block {
@@ -546,69 +538,58 @@ video {
   display: inline !important;
 }
 
-.table {
-  display: table !important;
-}
-
-.table-caption {
-  display: table-caption !important;
-}
-
-.table-cell {
-  display: table-cell !important;
-}
-
-.table-column {
-  display: table-column !important;
-}
-
-.table-column-group {
-  display: table-column-group !important;
-}
-
-.table-footer-group {
-  display: table-footer-group !important;
-}
-
-.table-header-group {
-  display: table-header-group !important;
-}
-
-.table-row-group {
-  display: table-row-group !important;
-}
-
-.table-row {
-  display: table-row !important;
+.flex {
+  display: flex !important;
 }
 
 .contents {
   display: contents !important;
 }
 
-.list-item {
-  display: list-item !important;
-}
-
 .hidden {
   display: none !important;
-}
-
-.border-collapse {
-  border-collapse: collapse !important;
 }
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
-.border {
-  border-width: 1px !important;
+.flex-row {
+  flex-direction: row !important;
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity)) !important;
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.gap-12 {
+  gap: 3rem !important;
+}
+
+.gap-5 {
+  gap: 1.25rem !important;
+}
+
+.py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif !important;
 }
 
 .text-3xl {
@@ -616,20 +597,91 @@ video {
   line-height: 2.25rem !important;
 }
 
-.italic {
-  font-style: italic !important;
+.text-4xl {
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
 }
 
-.underline {
-  text-decoration-line: underline !important;
+.text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
 }
 
-.line-through {
-  text-decoration-line: line-through !important;
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
 }
 
-.outline {
-  outline-style: solid !important;
+.text-\[1rem\] {
+  font-size: 1rem !important;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem !important;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem !important;
+}
+
+.text-\[1\.5rem\] {
+  font-size: 1.5rem !important;
+}
+
+.text-\[1px\] {
+  font-size: 1px !important;
+}
+
+.text-\[100px\] {
+  font-size: 100px !important;
+}
+
+.text-\[30px\] {
+  font-size: 30px !important;
+}
+
+.text-\[20px\] {
+  font-size: 20px !important;
+}
+
+.text-\[15px\] {
+  font-size: 15px !important;
+}
+
+.text-\[6px\] {
+  font-size: 6px !important;
+}
+
+.text-\[10px\] {
+  font-size: 10px !important;
+}
+
+.text-\[14px\] {
+  font-size: 14px !important;
+}
+
+.text-\[13px\] {
+  font-size: 13px !important;
+}
+
+.text-\[\] {
+  color:  !important;
+}
+
+.text-\[1\.rem\] {
+  color: 1.rem !important;
+}
+
+.text-\[1\.em\] {
+  color: 1.em !important;
+}
+
+.text-\[1\] {
+  color: 1 !important;
+}
+
+.text-\[px\] {
+  color: px !important;
 }
 
 .filter {
