@@ -546,8 +546,8 @@ video {
   display: contents !important;
 }
 
-.hidden {
-  display: none !important;
+.w-full {
+  width: 100% !important;
 }
 
 .transform {
@@ -562,10 +562,6 @@ video {
   flex-direction: row-reverse !important;
 }
 
-.items-center {
-  align-items: center !important;
-}
-
 .justify-between {
   justify-content: space-between !important;
 }
@@ -578,14 +574,60 @@ video {
   gap: 1.25rem !important;
 }
 
-.py-4 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+.bg-red-300 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[\] {
+  background-color:  !important;
+}
+
+.bg-\[red\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[b\] {
+  background-color: b !important;
+}
+
+.bg-\[\#989898\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(152 152 152 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[brown\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(165 42 42 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[\#fff\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[989898\] {
+  background-color: 989898 !important;
+}
+
+.py-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
 }
 
 .py-2 {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .font-lato {
@@ -602,86 +644,28 @@ video {
   line-height: 2.5rem !important;
 }
 
-.text-xl {
-  font-size: 1.25rem !important;
-  line-height: 1.75rem !important;
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.text-2xl {
-  font-size: 1.5rem !important;
-  line-height: 2rem !important;
+.text-\[white\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.text-\[1rem\] {
-  font-size: 1rem !important;
+.text-\[\#00000\] {
+  color: #00000 !important;
 }
 
-.text-\[3rem\] {
-  font-size: 3rem !important;
+.text-\[\#fff\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.text-\[2rem\] {
-  font-size: 2rem !important;
-}
-
-.text-\[1\.5rem\] {
-  font-size: 1.5rem !important;
-}
-
-.text-\[1px\] {
-  font-size: 1px !important;
-}
-
-.text-\[100px\] {
-  font-size: 100px !important;
-}
-
-.text-\[30px\] {
-  font-size: 30px !important;
-}
-
-.text-\[20px\] {
-  font-size: 20px !important;
-}
-
-.text-\[15px\] {
-  font-size: 15px !important;
-}
-
-.text-\[6px\] {
-  font-size: 6px !important;
-}
-
-.text-\[10px\] {
-  font-size: 10px !important;
-}
-
-.text-\[14px\] {
-  font-size: 14px !important;
-}
-
-.text-\[13px\] {
-  font-size: 13px !important;
-}
-
-.text-\[\] {
-  color:  !important;
-}
-
-.text-\[1\.rem\] {
-  color: 1.rem !important;
-}
-
-.text-\[1\.em\] {
-  color: 1.em !important;
-}
-
-.text-\[1\] {
-  color: 1 !important;
-}
-
-.text-\[px\] {
-  color: px !important;
+.text-\[brown\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(165 42 42 / var(--tw-text-opacity)) !important;
 }
 
 .filter {

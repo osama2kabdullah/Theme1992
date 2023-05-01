@@ -1,0 +1,156 @@
+{% for block in section.blocks %}
+  <div class="text-center {{block.settings.color}} py-{{block.settings.padding}}">
+    {%- if block.settings.link != blank -%}
+      <a class="" href="{{block.settings.link}}">
+        <span>{{ block.settings.announcement }}</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    {% else %}
+      <p>{{ block.settings.announcement }}</p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+<div class="flex text-[{{section.settings.font_size}}px] {{section.settings.announcement_aligment}} justify-between py-[{{section.settings.top_bottom_padding}}em]">
+  {%- if section.settings.show_announcement -%}
+    <p>{{ section.settings.announcement }}</p>
+  {% else %}
+    <p></p>
+  {%- endif -%}
+  <div class="flex gap-12">
+    {%- if section.settings.show_country_and_currency -%}
+      <div class="flex gap-5">
+        <select name="language" id="">
+          <option value="English">English</option>
+          <option value="Bangla">Bangla</option>
+        </select>
+        <select name="curency" id="">
+          <option value="USD">USD</option>
+          <option value="BD">BD</option>
+        </select>
+      </div>
+    {%- endif -%}
+    {%- if section.settings.show_shipping_address -%}
+      <p>Shipping to: Khulna</p>
+    {%- endif -%}
+    <div class="flex gap-5">
+      <p>Login</p>
+      <p>Register</p>
+    </div>
+  </div>
+</div>
+<hr>
+
+{% schema %}
+{
+  "name": "Top bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show announcement",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "announcement",
+      "label": "Announcement",
+      "default": "Announcement of this store"
+    },
+    {
+      "type": "radio",
+      "id": "announcement_aligment",
+      "label": "Announcement alignment",
+      "options": [
+        {
+          "value": "flex-row",
+          "label": "Left"
+        },
+        {
+          "value": "flex-row-reverse",
+          "label": "Right"
+        }
+      ],
+      "default": "flex-row"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_and_currency",
+      "label": "Show Country and Currency",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_address",
+      "label": "Show Shipping Address",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "top_bottom_padding",
+      "min": 0,
+      "max": 6,
+      "step": 2,
+      "unit": "em",
+      "label": "Top-Bottom Padding",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 13,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "custom_announcement",
+      "name": "Custom Announcement",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "announcement",
+          "label": "Announcement",
+          "default": "This is a custom announcment in the top of the header"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "range",
+          "id": "padding",
+          "min": 0,
+          "max": 6,
+          "step": 2,
+          "unit": "em",
+          "label": "Top Bottom Space",
+          "default": 2
+        },
+        {
+          "type": "select",
+          "id": "color",
+          "label": "Color",
+          "options": [
+            {
+              "value": "bg-[#989898] text-[#fff]",
+              "label": "Gray"
+            },
+            {
+              "value": "bg-[brown] text-[#fff]",
+              "label": "Brown"
+            }
+          ],
+          "default": "bg-[#989898] text-[#fff]"
+        }        
+      ]
+    }
+  ]
+}
+{% endschema %}

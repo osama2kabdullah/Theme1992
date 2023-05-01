@@ -5,9 +5,12 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
-    {% section 'header' %}
-    {{ content_for_layout }}
-    {% section 'footer' %}
+    {% sections 'header-group' %}
+    <main role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+    {% sections 'footer-group' %}
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/cd37335466.js" crossorigin="anonymous"></script>
   </body>
 </html>
-
