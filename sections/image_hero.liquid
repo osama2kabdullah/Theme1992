@@ -1,21 +1,17 @@
-{% for block in section.blocks %}
-  {% if block.type == 'banner' %}
-  {% endif %}
-{% endfor %}
-
-<div class="relative h-[90vh] px-[.5em]">
+<div class="relative my-5 h-[90vh] px-[.5em]">
   <button id="minusBtn" class="absolute top-[44vh] p-3 left-0 bg-black text-white">
     <i class="fa-solid text-2xl fa-arrow-left"></i>
   </button>
 
   {% for block in section.blocks %}
     {% if block.type == 'banner' %}
-      <div id="banner-{{ forloop.index }}" class=" banner">
-        <div class="m-[1em] bg-no-repeat bg-cover bg-center h-[90vh] bg-[url('{{block.settings.hero_image | img_url: "1024x" }}')]">
-
+      <div id="banner-{{ forloop.index }}" class="text-white banner">
+        <div
+          style="background-image: url({{ block.settings.hero_image | img_url: "1224x" }})" 
+          class="m-[1em] bg-no-repeat bg-cover bg-center h-[90vh]">
         </div>
 
-        <h1 class="text-6xl absolute top-[35vh] left-[35vw] text-center right-[35vw] text-white font-lato">{{block.settings.banner_title}}</h1>
+        <h1 class="text-6xl absolute top-[35vh] left-[35vw] text-center right-[35vw] font-lato">{{block.settings.banner_title}}</h1>
         <div class="text-center absolute bottom-0 w-full">
           <h3 class="text-3xl">{{ forloop.index }}</h3>
           <h1 class="text-4xl">/</h1>
@@ -32,7 +28,7 @@
   </button>
 </div>
 
-<script src="{{'carusel.js'|asset_url}}" defer="defer"></script>
+<script src="{{'carusel.js'|asset_url}}"></script>
 
 {% schema %}
 {
