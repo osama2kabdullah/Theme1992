@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx tailwind -i ./assets/tailwind.css -o ./assets/application.css --watch"
+    "start": "shopify theme dev",
+    "watch": "npx tailwind -i ./assets/tailwind.css -o ./assets/application.css --watch",
+    "dev": "npm run start & npm run watch"
   },
   "keywords": [],
   "author": "",

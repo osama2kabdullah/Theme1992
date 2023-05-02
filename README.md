@@ -48,3 +48,13 @@ module.exports = {
     "watch": "npx tailwind -i ./assets/tailwind.css -o ./assets/application.css --watch"
   },
 ```
+8. Alternatively you can write a script in your `package.json` file.
+```json
+"start": "shopify theme dev",
+"watch": "npx tailwind -i ./assets/tailwind.css -o ./assets/application.css --watch",
+"dev": "npm run start & npm run watch"
+```
+This will help you run these aretwo in one command. If you use out of UNIX-like machine. This will maybe not work. But you can try this-
+```json
+"dev": "npm-run-all --parallel start-watch wp-server"
+```
