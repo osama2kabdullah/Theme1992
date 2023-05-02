@@ -1,0 +1,87 @@
+{% for block in section.blocks %}
+  {% if block.type == 'banner' %}
+  {% endif %}
+{% endfor %}
+
+<div class="relative h-[90vh] px-[.5em]">
+  <button id="minusBtn" class="absolute top-[44vh] p-3 left-0 bg-black text-white">
+    <i class="fa-solid text-2xl fa-arrow-left"></i>
+  </button>
+
+  {% for block in section.blocks %}
+    {% if block.type == 'banner' %}
+      <div id="banner-{{ forloop.index }}" class=" banner">
+        <div class="m-[1em] bg-no-repeat bg-cover bg-center h-[90vh] bg-[url('{{block.settings.hero_image | img_url: "1024x" }}')]">
+
+        </div>
+
+        <h1 class="text-6xl absolute top-[35vh] left-[35vw] text-center right-[35vw] text-white font-lato">{{block.settings.banner_title}}</h1>
+        <div class="text-center absolute bottom-0 w-full">
+          <h3 class="text-3xl">{{ forloop.index }}</h3>
+          <h1 class="text-4xl">/</h1>
+          <h3 class="text-3xl">{{ forloop.length }}</h3>
+          <h3 class="text-2xl">{{block.settings.banner_subtitle}}</h3>
+          <p>{{block.settings.banner_description}}</p>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+
+  <button id="plusBtn" class="absolute p-3 top-[44vh] right-0 bg-black text-white">
+    <i class="fa-solid text-2xl fa-arrow-right"></i>
+  </button>
+</div>
+
+<script src="{{'carusel.js'|asset_url}}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Image hero",
+  "max_blocks": 3,
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "Banner Image"
+        },
+        {
+          "type": "url",
+          "id": "redirect_url",
+          "label": "Redirect URL"
+        },
+        {
+          "type": "text",
+          "id": "banner_title",
+          "label": "Banner title",
+          "default": "New this week"
+        },
+        {
+          "type": "text",
+          "id": "banner_subtitle",
+          "label": "Banner subtitle",
+          "default": "Spring Girls"
+        },
+        {
+          "type": "textarea",
+          "id": "banner_description",
+          "label": "Banner description",
+          "default": "Lookbook 2015"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image hero"
+    }
+  ]
+}
+{% endschema %}

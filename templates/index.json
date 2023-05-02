@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "image_hero": {
+      "type": "image_hero",
+      "settings": {}
+    }
+  },
+  "order": ["image_hero"]
+}
