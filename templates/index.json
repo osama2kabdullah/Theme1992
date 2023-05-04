@@ -3,7 +3,33 @@
     "image_hero": {
       "type": "image_hero",
       "settings": {}
+    },
+    "column-hero": {
+      "type": "column-hero",
+      "settings": {},
+      "blocks": {
+        "image_with_text_or_input": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "text_or_input": "text",
+            "title": "This is Image title",
+            "image_description": "This is image description",
+            "form_name": true,
+            "form_email": false,
+            "form_message": true
+          }
+        },
+        "youtube_video": {
+          "type": "youtube_video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=FxMw8SDCqwc",
+            "video_title": "Edit title",
+            "video_description": "Edit description"
+          }
+        }
+      },
+      "block_order": ["image_with_text_or_input", "youtube_video"]
     }
   },
-  "order": ["image_hero"]
+  "order": ["image_hero", "column-hero"]
 }

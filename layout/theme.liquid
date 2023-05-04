@@ -4,7 +4,7 @@
     {{ 'application.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
   </head>
-  <body>
+  <body class="w-[1224px] mx-auto">
     {% sections 'header-group' %}
     <main role="main" tabindex="-1">
       {{ content_for_layout }}

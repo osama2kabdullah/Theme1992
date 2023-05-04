@@ -1,0 +1,241 @@
+<section class="flex justify-between {{ section.settings.allignment }} h[90vh] items-center">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image_with_text_or_input' %}
+        <div class="relative">
+          <img class="ml-24 w-[400px] h-[600px]" src="{{ block.settings.image | img_url: "1224x" }}" alt="">
+          <div class="absolute top-[55vh]">
+            {% if block.settings.text_or_input == 'text' %}
+              <h1 class="text-5xl">{{ block.settings.title }}</h1>
+              <p>{{ block.settings.image_description }}</p>
+              <a href="{{ block.settings.redirect_url }}">>></a>
+            {% else %}
+              {% form 'customer' %}
+                {{ form.errors | default_errors }}
+                <div class="grid grid-cols-2">
+                  {% if block.settings.form_name == true %}
+                    <input type="text" placeholder="Name">
+                  {% endif %}
+                  {% if block.settings.form_email == true %}
+                    <input type="email" placeholder="Email">
+                  {% endif %}
+                  {% if block.settings.form_message == true %}
+                    <textarea class="col-span-2" name="message" id="message" cols="30" rows="10"></textarea>
+                  {% endif %}
+
+                  {% if block.settings.form_name == false
+                    and block.settings.form_email == false
+                    and block.settings.form_message == false
+                  %}
+                    <p>Your form goes here</p>
+                  {% else %}
+                    <input type="submit" value="submit">
+                  {% endif %}
+                </div>
+              {% endform %}
+            {% endif %}
+          </div>
+        </div>
+
+      {% when 'youtube_video' %}
+        <div>
+          <iframe
+            src="{{ block.settings.video_url| replace: 'watch?v=', 'embed/' }}"
+            frameborder="0"
+            class=""
+            width="560"
+            height="315"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+
+          <h3 class="text-2xl">{{ block.settings.video_title }}</h3>
+          <p>{{ block.settings.video_description }}</p>
+        </div>
+
+      {% when 'collections' %}
+        <div>
+          <h1>{{ block.settings.title }}</h1>
+          <p>{{ block.settings.description }}</p>
+        </div>
+
+      {% when 'teams' %}
+        <div>
+          <h1>{{ block.settings.title }}</h1>
+          <p>{{ block.settings.description }}</p>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Column hero",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 2,
+  "settings": [
+    {
+      "type": "radio",
+      "id": "allignment",
+      "label": "Column allignment",
+      "options": [
+        {
+          "value": "flex-row",
+          "label": "Left"
+        },
+        {
+          "value": "flex-row-reverse",
+          "label": "Right"
+        }
+      ],
+      "default": "flex-row"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Image with Text or Input",
+      "type": "image_with_text_or_input",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "text_or_input",
+          "label": "Text or Input?",
+          "options": [
+            {
+              "value": "text",
+              "label": "Text"
+            },
+            {
+              "value": "input",
+              "label": "Input"
+            }
+          ],
+          "default": "text"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "This is Image title"
+        },
+        {
+          "type": "textarea",
+          "id": "image_description",
+          "label": "Image description",
+          "default": "This is image description"
+        },
+        {
+          "type": "url",
+          "id": "redirect_url",
+          "label": "Redirect URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "form_name",
+          "label": "Name input",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "form_email",
+          "label": "Email input",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "form_message",
+          "label": "Message input",
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Youtube video",
+      "type": "youtube_video",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "label": "Video URL",
+          "default": "https://www.youtube.com/watch?v=FxMw8SDCqwc",
+          "accept": ["vimeo", "youtube"]
+        },
+        {
+          "type": "text",
+          "id": "video_title",
+          "label": "Video title",
+          "default": "Edit title"
+        },
+        {
+          "type": "textarea",
+          "id": "video_description",
+          "label": "Video description",
+          "default": "Edit description"
+        }
+      ]
+    },
+    {
+      "name": "Collections",
+      "type": "collections",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "type": "teams",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "limit": 1
+    }
+  ],
+  "presets": [
+    {
+      "name": "Column hero",
+      "blocks": [
+        {
+          "type": "image_with_text_or_input"
+        },
+        {
+          "type": "youtube_video"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

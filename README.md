@@ -1,3 +1,62 @@
+### Getting started with shopify theme: setup your local development environment
+1. Install shopify CLI.
+2. Make a folder with the name of your theme.
+3. Create required folders and file first.
+- Required folders
+```
+├── assets
+├── config
+├── layout
+├── locales
+├── sections
+├── snippets
+└── templates
+    └── customers
+```
+- Required Files
+```
+├── assets
+└── config
+    ├── settings_data.json
+    └── settings_schema.json
+├── layout
+    ├──theme.liquid
+    └──checkout.liquid
+├── locales
+├── sections
+├── snippets
+└── templates
+    ├── 404.liquid
+    ├── article.liquid
+    ├── blog.liquid
+    ├── cart.liquid
+    ├── collection.liquid
+    ├── gift_card.liquid
+    ├── index.liquid
+    ├── list-collections.liquid
+    ├── page.liquid
+    ├── password.liquid
+    ├── product.liquid
+    └── search.liquid
+└── customers
+    ├── account.liquid
+    ├── activate_account.liquid
+    ├── addresses.liquid
+    ├── login.liquid
+    ├── order.liquid
+    ├── register.liquid
+    └── reset_password.liquid
+```
+4. After create requred folders and files. You should have a shopify partner account and a store.
+5. Then invoke this command in your terminal oe powershell from the root directory of your theme project.
+```
+shopify theme dev
+```
+6. For the first time and maybe some time in letter you need to login in your store with the CLI. No worry, the CLI help you for this authentication easy.
+7. Normally the localhost serve in `http://localhost:9292`.
+8. You should also find a store editor link in your terminal or powershell. This will help you to manage content for your store.
+9. Thats it. Happy shopify coding.
+
 ### Add Tailwind CSS in shopify theme
 
 1. Initial `node.js` package manager with `npm` or `yarn` by running
