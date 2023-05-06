@@ -1,43 +1,47 @@
-<button id="minusBtn" class=" top-[44vh] p-3 left-0 bg-black text-white">
-  <i class="fa-solid text-2xl fa-arrow-left"></i>
-</button>
-
-<button id="plusBtn" class=" top-[44vh] p-3 right-0 bg-black text-white">
-  <i class="fa-solid text-2xl fa-arrow-right"></i>
-</button>
-
 <div class="relative">
+  <button id="prevBtn" class="absolute z-[1] top-[44vh] p-3 left-0 bg-black text-white">
+    <i class="fa-solid text-2xl fa-arrow-left"></i>
+  </button>
 
-    <div class="overflow-hidden relative h-[620px]">
-      <div class="absolute duration-1000 w-[100%] slide">
-        <div class="relative ">
-          <h1 class="text-6xl text-center bottom-[35%] top-[40%] right-[30%] left-[30%] absolute">Hello Boys</h1>
+  <button id="nextBtn" class="absolute z-[1] top-[44vh] p-3 right-0 bg-black text-white">
+    <i class="fa-solid text-2xl fa-arrow-right"></i>
+  </button>
 
-          <div class="text-center right-[30%] left-[30%] bottom-0 absolute">
-            <h1 class="text-5xl">2 / 2</h1>
-            <h3 class="text-4xl">Hey boys</h3>
-            <h4>The optional</h4>
-          </div>
+  <div class="overflow-hidden relative h-[620px]">
 
-          <img class="px-5 w-full" src="https://dummyimage.com/1224x620/ddd/000" alt="">
+    <div class="absolute duration-1000 w-[100%] slide">
+      <div class="relative ">
+        <h1 class="text-6xl text-center bottom-[35%] top-[40%] right-[30%] left-[30%] absolute">Hello Boys</h1>
+
+        <div class="text-center right-[30%] left-[30%] bottom-0 absolute">
+          <h1 class="text-5xl">2 / 2</h1>
+          <h3 class="text-4xl">Hey boys</h3>
+          <h4>The optional</h4>
         </div>
-      </div>
 
-      <div class="absolute duration-1000 transition w-[100%] slide">
-        <div class="relative">
-          <h1 class="text-6xl text-center bottom-[35%] top-[40%] right-[30%] left-[30%] absolute">Spring girls</h1>
-
-          <div class="text-center right-[30%] left-[30%] bottom-0 absolute">
-            <h1 class="text-5xl">1 / 2</h1>
-            <h3 class="text-4xl">The title</h3>
-            <h4>The description</h4>
-          </div>
-
-          <img class="px-5 w-full" src="https://dummyimage.com/1224x620/ddd/000" alt="">
-        </div>
+        <img class="px-5 w-full" src="https://dummyimage.com/1224x620/ddd/000" alt="">
       </div>
     </div>
 
+    <div class="absolute duration-1000 transition w-[100%] slide">
+      <div class="relative">
+        <h1 class="text-6xl text-center bottom-[35%] top-[40%] right-[30%] left-[30%] absolute">Spring girls</h1>
+
+        <div class="text-center right-[30%] left-[30%] bottom-0 absolute">
+          <h1 class="text-5xl">1 / 2</h1>
+          <h3 class="text-4xl">The title</h3>
+          <h4>The description</h4>
+        </div>
+
+        {% comment %} <img class="px-5 w-full" src="https://dummyimage.com/1224x620/ddd/000" alt=""> {% endcomment %}
+        <video class="px-5 w-full" controls>
+          <source src="your_video's_name.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <script src="{{'carusel.js'|asset_url}}"></script>

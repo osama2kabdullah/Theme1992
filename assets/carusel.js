@@ -1,5 +1,5 @@
-const plusBtn = document.getElementById("plusBtn");
-const minusBtn = document.getElementById("minusBtn");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
 const slides = document.getElementsByClassName("slide");
 let counter = 0;
 
@@ -8,17 +8,23 @@ for (let i = 0; i < slides.length; i++) {
   slide.style.left = `${i * 100}%`;
 }
 
-plusBtn.addEventListener("click", function () {
-  counter = counter - 1;
+nextBtn.addEventListener("click", function () {
+  counter--;
   slideImage();
 });
 
-minusBtn.addEventListener("click", function () {
-  counter = counter + 1;
+prevBtn.addEventListener("click", function () {
+  counter++;
   slideImage();
 });
 
 function slideImage() {
+  // Check if the counter goes beyond the range of the slides array
+  if (counter <= -slides.length) {
+    counter = 0;
+  } else if (counter > 0) {
+    counter = -slides.length;
+  }
   for (let i = 0; i < slides.length; i++) {
     const slide = slides[i];
     slide.style.transform = `translateX(${ counter * 100 }%)`;
