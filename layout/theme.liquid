@@ -1,8 +1,8 @@
 <html>
   <head>
     {{ content_for_header }}
+    <!-- Tailwind CSS code -->
     {{ 'application.css' | asset_url | stylesheet_tag }}
-    {{ 'base.css' | asset_url | stylesheet_tag }}
   </head>
   <body class="w-[1224px] mx-auto">
     {% sections 'header-group' %}

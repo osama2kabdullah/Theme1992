@@ -1,8 +1,10 @@
+{% assign products_to_display = 10 %}
+
 <section class="flex justify-between {{ section.settings.allignment }} h[90vh] items-center">
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'image_with_text_or_input' %}
-        <div class="relative">
+        <div class="relative w-full">
           <img class="ml-24 w-[400px] h-[600px]" src="{{ block.settings.image | img_url: "1224x" }}" alt="">
           <div class="absolute top-[55vh]">
             {% if block.settings.text_or_input == 'text' %}
@@ -38,7 +40,7 @@
         </div>
 
       {% when 'youtube_video' %}
-        <div>
+        <div class="w-full bg-red-300">
           <iframe
             src="{{ block.settings.video_url| replace: 'watch?v=', 'embed/' }}"
             frameborder="0"
@@ -54,7 +56,7 @@
         </div>
 
       {% when 'collections' %}
-        <div>
+        <div class="bg-red-500 w-full">
           <h1>{{ block.settings.title }}</h1>
           <p>{{ block.settings.description }}</p>
         </div>

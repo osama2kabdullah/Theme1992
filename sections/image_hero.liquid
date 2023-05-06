@@ -1,31 +1,43 @@
-<div class="relative my-5 h-[90vh] px-[.5em]">
-  <button id="minusBtn" class="absolute top-[44vh] p-3 left-0 bg-black text-white">
-    <i class="fa-solid text-2xl fa-arrow-left"></i>
-  </button>
+<button id="minusBtn" class=" top-[44vh] p-3 left-0 bg-black text-white">
+  <i class="fa-solid text-2xl fa-arrow-left"></i>
+</button>
 
-  {% for block in section.blocks %}
-    {% if block.type == 'banner' %}
-      <div id="banner-{{ forloop.index }}" class="text-white banner">
-        <div
-          style="background-image: url({{ block.settings.hero_image | img_url: "1224x" }})" 
-          class="m-[1em] bg-no-repeat bg-cover bg-center h-[90vh]">
-        </div>
+<button id="plusBtn" class=" top-[44vh] p-3 right-0 bg-black text-white">
+  <i class="fa-solid text-2xl fa-arrow-right"></i>
+</button>
 
-        <h1 class="text-6xl absolute top-[35vh] left-[35vw] text-center right-[35vw] font-lato">{{block.settings.banner_title}}</h1>
-        <div class="text-center absolute bottom-0 w-full">
-          <h3 class="text-3xl">{{ forloop.index }}</h3>
-          <h1 class="text-4xl">/</h1>
-          <h3 class="text-3xl">{{ forloop.length }}</h3>
-          <h3 class="text-2xl">{{block.settings.banner_subtitle}}</h3>
-          <p>{{block.settings.banner_description}}</p>
+<div class="relative">
+
+    <div class="overflow-hidden relative h-[620px]">
+      <div class="absolute duration-1000 w-[100%] slide">
+        <div class="relative ">
+          <h1 class="text-6xl text-center bottom-[35%] top-[40%] right-[30%] left-[30%] absolute">Hello Boys</h1>
+
+          <div class="text-center right-[30%] left-[30%] bottom-0 absolute">
+            <h1 class="text-5xl">2 / 2</h1>
+            <h3 class="text-4xl">Hey boys</h3>
+            <h4>The optional</h4>
+          </div>
+
+          <img class="px-5 w-full" src="https://dummyimage.com/1224x620/ddd/000" alt="">
         </div>
       </div>
-      {% endif %}
-    {% endfor %}
 
-  <button id="plusBtn" class="absolute p-3 top-[44vh] right-0 bg-black text-white">
-    <i class="fa-solid text-2xl fa-arrow-right"></i>
-  </button>
+      <div class="absolute duration-1000 transition w-[100%] slide">
+        <div class="relative">
+          <h1 class="text-6xl text-center bottom-[35%] top-[40%] right-[30%] left-[30%] absolute">Spring girls</h1>
+
+          <div class="text-center right-[30%] left-[30%] bottom-0 absolute">
+            <h1 class="text-5xl">1 / 2</h1>
+            <h3 class="text-4xl">The title</h3>
+            <h4>The description</h4>
+          </div>
+
+          <img class="px-5 w-full" src="https://dummyimage.com/1224x620/ddd/000" alt="">
+        </div>
+      </div>
+    </div>
+
 </div>
 
 <script src="{{'carusel.js'|asset_url}}"></script>
