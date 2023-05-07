@@ -2,11 +2,48 @@
   "sections": {
     "image_hero": {
       "type": "image_hero",
-      "settings": {}
+      "blocks": {
+        "00ebd720-47c3-4e73-989d-59cfc283de7a": {
+          "type": "banner",
+          "settings": {
+            "hero_image": "shopify:\/\/shop_images\/professional-smiling-woman.jpg",
+            "redirect_url": "",
+            "banner_title": "New this week",
+            "banner_subtitle": "Spring Girls",
+            "banner_description": "Lookbook 2015"
+          }
+        },
+        "f2cdcd51-59c3-4baf-a543-12f43e08380b": {
+          "type": "banner",
+          "settings": {
+            "hero_image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "redirect_url": "",
+            "banner_title": "New this week",
+            "banner_subtitle": "Spring Girls",
+            "banner_description": "Lookbook 2015"
+          }
+        },
+        "2daf0829-eea3-4931-9393-3653154f41b9": {
+          "type": "banner",
+          "settings": {
+            "hero_image": "shopify:\/\/shop_images\/osama-coding.png",
+            "redirect_url": "",
+            "banner_title": "New this week",
+            "banner_subtitle": "Spring Girls",
+            "banner_description": "Lookbook 2015"
+          }
+        }
+      },
+      "block_order": [
+        "00ebd720-47c3-4e73-989d-59cfc283de7a",
+        "f2cdcd51-59c3-4baf-a543-12f43e08380b",
+        "2daf0829-eea3-4931-9393-3653154f41b9"
+      ],
+      "settings": {
+      }
     },
     "column-hero": {
       "type": "column-hero",
-      "settings": {},
       "blocks": {
         "image_with_text_or_input": {
           "type": "image_with_text_or_input",
@@ -14,6 +51,7 @@
             "text_or_input": "text",
             "title": "This is Image title",
             "image_description": "This is image description",
+            "redirect_url": "",
             "form_name": true,
             "form_email": false,
             "form_message": true
@@ -22,14 +60,23 @@
         "youtube_video": {
           "type": "youtube_video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=FxMw8SDCqwc",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=FxMw8SDCqwc",
             "video_title": "Edit title",
             "video_description": "Edit description"
           }
         }
       },
-      "block_order": ["image_with_text_or_input", "youtube_video"]
+      "block_order": [
+        "image_with_text_or_input",
+        "youtube_video"
+      ],
+      "settings": {
+        "allignment": "flex-row"
+      }
     }
   },
-  "order": ["image_hero", "column-hero"]
+  "order": [
+    "image_hero",
+    "column-hero"
+  ]
 }
