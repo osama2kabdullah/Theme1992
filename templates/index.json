@@ -48,6 +48,7 @@
         "image_with_text_or_input": {
           "type": "image_with_text_or_input",
           "settings": {
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
             "text_or_input": "text",
             "title": "This is Image title",
             "image_description": "This is image description",
@@ -71,12 +72,44 @@
         "youtube_video"
       ],
       "settings": {
-        "allignment": "flex-row"
+      }
+    },
+    "8433263c-1b01-421c-9c77-2909e3ad28d3": {
+      "type": "column-hero",
+      "blocks": {
+        "a161c67c-20fc-4928-a65c-7ad86e9cbe17": {
+          "type": "collections",
+          "settings": {
+            "title": "Collections",
+            "description": "Collection description",
+            "limit": 2
+          }
+        },
+        "template--18953686909240__8433263c-1b01-421c-9c77-2909e3ad28d3-1683469542d7173309-0": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "text_or_input": "text",
+            "title": "This is Image title",
+            "image_description": "This is image description",
+            "redirect_url": "",
+            "form_name": true,
+            "form_email": false,
+            "form_message": true
+          }
+        }
+      },
+      "block_order": [
+        "a161c67c-20fc-4928-a65c-7ad86e9cbe17",
+        "template--18953686909240__8433263c-1b01-421c-9c77-2909e3ad28d3-1683469542d7173309-0"
+      ],
+      "settings": {
       }
     }
   },
   "order": [
     "image_hero",
-    "column-hero"
+    "column-hero",
+    "8433263c-1b01-421c-9c77-2909e3ad28d3"
   ]
 }
