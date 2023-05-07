@@ -1,3 +1,6 @@
+### Benifits of connect Shopify github app in this repository
+1. Update code that edited by store admin. the code committed by `shopify bot`
+
 ### Getting started with shopify theme: setup your local development environment
 1. Install shopify CLI.
 2. Make a folder with the name of your theme.

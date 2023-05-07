@@ -1,9 +1,10 @@
-<section class="flex justify-between {{ section.settings.allignment }} h[90vh] items-center">
+<section class="flex my-12 justify-between h[90vh] items-center">
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'image_with_text_or_input' %}
         <div class="relative w-full">
-          <img class="ml-24 w-[400px] h-[600px]" src="{{ block.settings.image | img_url: "1224x" }}" alt="">
+          <img class="ml-24 h-[600px] w-[400px]" src="{{ block.settings.image | img_url: "400x600" }}" alt="">
+
           <div class="absolute top-[55vh]">
             {% if block.settings.text_or_input == 'text' %}
               <h1 class="text-5xl">{{ block.settings.title }}</h1>
@@ -38,7 +39,7 @@
         </div>
 
       {% when 'youtube_video' %}
-        <div class="w-full bg-red-300">
+        <div class="w-full">
           <iframe
             src="{{ block.settings.video_url| replace: 'watch?v=', 'embed/' }}"
             frameborder="0"
@@ -54,16 +55,52 @@
         </div>
 
       {% when 'collections' %}
-        <div class="bg-red-500 w-full">
-          <h1>{{ block.settings.title }}</h1>
-          <p>{{ block.settings.description }}</p>
+        <div class="w-full grid gap-12 text-center">
+          <div>
+            <h1 class="text-2xl">{{ block.settings.title }}</h1>
+            <p>{{ block.settings.description }}</p>
+            <p>. . .</p>
+          </div>
+
+          <div class="flex justify-center gap-3">            
+            {% for product in collections['boy'].products limit: block.settings.limit %}
+              {% render 'product-card' | product: product %}
+            {% endfor %}
+          </div>
         </div>
 
       {% when 'teams' %}
-        <div>
-          <h1>{{ block.settings.title }}</h1>
-          <p>{{ block.settings.description }}</p>
+        <div class="w-full grid gap-12 text-center">
+          <div>
+            <h1 class="text-2xl">{{ block.settings.title }}</h1>
+            <p>{{ block.settings.description }}</p>
+            <p>. . .</p>
+          </div>
+
+          <div class="flex justify-center gap-3">
+            <img src="https://picsum.photos/id/139/250/300" alt="">
+            <img src="https://picsum.photos/id/140/250/300" alt="">
+          </div>
         </div>
+
+      {% when 'testimonial' %}
+        <div class="grid gap-12 text-center">
+          <div>
+            <h1 class="text-2xl">{{ block.settings.title }}</h1>
+            <p>{{ block.settings.description }}</p>
+            <p> . . . </p>
+          </div>
+        
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatem qui reiciendis? Ea et illo error
+              perspiciatis, enim maxime aut consequuntur odit repellat quaerat dolorum debitis, eius obcaecati! Praesentium,
+              eum.
+            </p>
+            <p>John Doe</p>
+          </div>
+        </div>
+
     {% endcase %}
   {% endfor %}
 </section>
@@ -76,24 +113,6 @@
     "groups": ["header", "footer"]
   },
   "max_blocks": 2,
-  "settings": [
-    {
-      "type": "radio",
-      "id": "allignment",
-      "label": "Column allignment",
-      "options": [
-        {
-          "value": "flex-row",
-          "label": "Left"
-        },
-        {
-          "value": "flex-row-reverse",
-          "label": "Right"
-        }
-      ],
-      "default": "flex-row"
-    }
-  ],
   "blocks": [
     {
       "name": "Image with Text or Input",
@@ -103,7 +122,8 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Image",
+          "info": "Use width: 400px and height: 600px Image"
         },
         {
           "type": "select",
@@ -192,12 +212,20 @@
         {
           "type": "text",
           "id": "title",
-          "label": "Title"
+          "label": "Title",
+          "default": "Collections" 
         },
         {
           "type": "textarea",
           "id": "description",
-          "label": "Description"
+          "label": "Description",
+          "default": "Collection description"
+        },
+        {
+          "type": "number",
+          "id": "limit",
+          "label": "Number of collection",
+          "default": 8
         }
       ]
     },
@@ -209,19 +237,47 @@
         {
           "type": "text",
           "id": "title",
-          "label": "Title"
+          "label": "Title",
+          "default": "Teams"
         },
         {
           "type": "textarea",
           "id": "description",
-          "label": "Description"
+          "label": "Description",
+          "default": "Teams description"
+        },
+        {
+          "type": "number",
+          "id": "limit",
+          "label": "Number of teams",
+          "default": 8
         }
       ]
     },
     {
       "type": "testimonial",
       "name": "Testimonial",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Testimonial" 
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "People say about us"
+        },
+        {
+          "type": "number",
+          "id": "limit",
+          "label": "Number of feedback",
+          "default": 8
+        }
+      ]
     }
   ],
   "presets": [
