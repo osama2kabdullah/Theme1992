@@ -23,10 +23,15 @@ function slideImage() {
   if (counter <= -slides.length) {
     counter = 0;
   } else if (counter > 0) {
-    counter = -slides.length;
+    counter = -slides.length + 1;
   }
   for (let i = 0; i < slides.length; i++) {
     const slide = slides[i];
     slide.style.transform = `translateX(${ counter * 100 }%)`;
   }
 }
+
+setInterval(function() {
+  counter--;
+  slideImage();
+}, 5000);
