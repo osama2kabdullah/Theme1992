@@ -1,11 +1,23 @@
-<section class="flex my-12 justify-between h[90vh] items-center">
+<section class="flex my-12 gap-3 justify-between h[90vh] items-center">
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'image_with_text_or_input' %}
         <div class="relative w-full">
-          <img class="ml-24 h-[600px] w-[400px]" src="{{ block.settings.image | img_url: "400x600" }}" alt="">
+            <div class="{% if block.settings.image_text_alignment == "center" %} pb-12 {% else %} pl-24 {% endif %}">
+              <img
+                class="{% if block.settings.image_text_alignment == "center" %} w-full {% endif %}"
+                src="{{ block.settings.image | img_url: "1224x620" }}"
+                alt=""
+              >
+            </div>
 
-          <div class="absolute top-[55vh]">
+          {% comment %}
+            ---if alignment center add this classes---
+            text: bottom-0 text-center w-full
+            image: w-full
+          {% endcomment %}
+
+          <div class="absolute {% if block.settings.image_text_alignment == "left" %} bottom-11 {% else %} bottom-0 text-center w-full {% endif %}">
             {% if block.settings.text_or_input == 'text' %}
               <h1 class="text-5xl">{{ block.settings.title }}</h1>
               <p>{{ block.settings.image_description }}</p>
@@ -62,8 +74,8 @@
             <p>. . .</p>
           </div>
 
-          <div class="flex justify-center gap-3">            
-            {% for product in collections['boy'].products limit: block.settings.limit %}
+          <div class="flex justify-center gap-3">
+            {% for product in collections.boy.products limit: block.settings.limit %}
               {% render 'product-card' | product: product %}
             {% endfor %}
           </div>
@@ -88,19 +100,18 @@
           <div>
             <h1 class="text-2xl">{{ block.settings.title }}</h1>
             <p>{{ block.settings.description }}</p>
-            <p> . . . </p>
+            <p>. . .</p>
           </div>
-        
+
           <div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatem qui reiciendis? Ea et illo error
-              perspiciatis, enim maxime aut consequuntur odit repellat quaerat dolorum debitis, eius obcaecati! Praesentium,
-              eum.
+              perspiciatis, enim maxime aut consequuntur odit repellat quaerat dolorum debitis, eius obcaecati!
+              Praesentium, eum.
             </p>
             <p>John Doe</p>
           </div>
         </div>
-
     {% endcase %}
   {% endfor %}
 </section>
@@ -117,7 +128,7 @@
     {
       "name": "Image with Text or Input",
       "type": "image_with_text_or_input",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "image_picker",
@@ -140,6 +151,23 @@
             }
           ],
           "default": "text"
+        },
+        {
+          "type": "select",
+          "id": "image_text_alignment",
+          "label": "Image and text alignment",
+          "info": "The alignment of text and image",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            }
+          ],
+          "default": "left"
         },
         {
           "type": "text",
@@ -181,7 +209,7 @@
     {
       "name": "Youtube video",
       "type": "youtube_video",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "video_url",
@@ -213,7 +241,7 @@
           "type": "text",
           "id": "title",
           "label": "Title",
-          "default": "Collections" 
+          "default": "Collections"
         },
         {
           "type": "textarea",
@@ -263,7 +291,7 @@
           "type": "text",
           "id": "title",
           "label": "Title",
-          "default": "Testimonial" 
+          "default": "Testimonial"
         },
         {
           "type": "textarea",
