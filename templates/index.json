@@ -50,6 +50,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
             "text_or_input": "text",
+            "image_text_alignment": "left",
             "title": "This is Image title",
             "image_description": "This is image description",
             "redirect_url": "",
@@ -90,6 +91,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "text_or_input": "text",
+            "image_text_alignment": "left",
             "title": "This is Image title",
             "image_description": "This is image description",
             "redirect_url": "",
@@ -105,11 +107,51 @@
       ],
       "settings": {
       }
+    },
+    "816ab581-984f-40df-9c40-06269c9f02d3": {
+      "type": "column-hero",
+      "blocks": {
+        "template--19027465503032__816ab581-984f-40df-9c40-06269c9f02d3-1683544726ad7ace12-0": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "text_or_input": "text",
+            "image_text_alignment": "center",
+            "title": "This is Image title",
+            "image_description": "This is image description",
+            "redirect_url": "",
+            "form_name": true,
+            "form_email": false,
+            "form_message": true
+          }
+        },
+        "f6947ed3-624f-4a7c-9e40-4b0a67f47675": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/professional-smiling-woman.jpg",
+            "text_or_input": "text",
+            "image_text_alignment": "center",
+            "title": "This is Image title",
+            "image_description": "This is image description",
+            "redirect_url": "",
+            "form_name": true,
+            "form_email": false,
+            "form_message": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19027465503032__816ab581-984f-40df-9c40-06269c9f02d3-1683544726ad7ace12-0",
+        "f6947ed3-624f-4a7c-9e40-4b0a67f47675"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_hero",
     "column-hero",
-    "8433263c-1b01-421c-9c77-2909e3ad28d3"
+    "8433263c-1b01-421c-9c77-2909e3ad28d3",
+    "816ab581-984f-40df-9c40-06269c9f02d3"
   ]
 }
