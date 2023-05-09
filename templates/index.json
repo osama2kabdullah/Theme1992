@@ -6,7 +6,7 @@
         "00ebd720-47c3-4e73-989d-59cfc283de7a": {
           "type": "banner",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/professional-smiling-woman.jpg",
+            "hero_image": "shopify://shop_images/professional-smiling-woman.jpg",
             "redirect_url": "",
             "banner_title": "New this week",
             "banner_subtitle": "Spring Girls",
@@ -16,7 +16,7 @@
         "f2cdcd51-59c3-4baf-a543-12f43e08380b": {
           "type": "banner",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "hero_image": "shopify://shop_images/rack-of-womens-clothing.jpg",
             "redirect_url": "",
             "banner_title": "New this week",
             "banner_subtitle": "Spring Girls",
@@ -26,7 +26,7 @@
         "2daf0829-eea3-4931-9393-3653154f41b9": {
           "type": "banner",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/osama-coding.png",
+            "hero_image": "shopify://shop_images/osama-coding.png",
             "redirect_url": "",
             "banner_title": "New this week",
             "banner_subtitle": "Spring Girls",
@@ -39,8 +39,7 @@
         "f2cdcd51-59c3-4baf-a543-12f43e08380b",
         "2daf0829-eea3-4931-9393-3653154f41b9"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "column-hero": {
       "type": "column-hero",
@@ -48,9 +47,8 @@
         "image_with_text_or_input": {
           "type": "image_with_text_or_input",
           "settings": {
-            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
+            "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
             "text_or_input": "text",
-            "image_text_alignment": "left",
             "title": "This is Image title",
             "image_description": "This is image description",
             "redirect_url": "",
@@ -62,18 +60,14 @@
         "youtube_video": {
           "type": "youtube_video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=eXBkFr_s3Bc",
+            "video_url": "https://www.youtube.com/watch?v=eXBkFr_s3Bc",
             "video_title": "Edit title",
             "video_description": "Edit description"
           }
         }
       },
-      "block_order": [
-        "image_with_text_or_input",
-        "youtube_video"
-      ],
-      "settings": {
-      }
+      "block_order": ["image_with_text_or_input", "youtube_video"],
+      "settings": {}
     },
     "8433263c-1b01-421c-9c77-2909e3ad28d3": {
       "type": "column-hero",
@@ -89,9 +83,8 @@
         "template--18953686909240__8433263c-1b01-421c-9c77-2909e3ad28d3-1683469542d7173309-0": {
           "type": "image_with_text_or_input",
           "settings": {
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "text_or_input": "text",
-            "image_text_alignment": "left",
             "title": "This is Image title",
             "image_description": "This is image description",
             "redirect_url": "",
@@ -105,53 +98,29 @@
         "a161c67c-20fc-4928-a65c-7ad86e9cbe17",
         "template--18953686909240__8433263c-1b01-421c-9c77-2909e3ad28d3-1683469542d7173309-0"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
-    "816ab581-984f-40df-9c40-06269c9f02d3": {
-      "type": "column-hero",
+    "column-section": {
+      "type": "column-section",
+      "settings": {
+        "border": 1
+      },
       "blocks": {
-        "template--19027465503032__816ab581-984f-40df-9c40-06269c9f02d3-1683544726ad7ace12-0": {
-          "type": "image_with_text_or_input",
+        "box": {
+          "type": "box",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
-            "text_or_input": "text",
-            "image_text_alignment": "center",
-            "title": "This is Image title",
-            "image_description": "This is image description",
-            "redirect_url": "",
-            "form_name": true,
-            "form_email": false,
-            "form_message": true
-          }
-        },
-        "f6947ed3-624f-4a7c-9e40-4b0a67f47675": {
-          "type": "image_with_text_or_input",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/professional-smiling-woman.jpg",
-            "text_or_input": "text",
-            "image_text_alignment": "center",
-            "title": "This is Image title",
-            "image_description": "This is image description",
-            "redirect_url": "",
-            "form_name": true,
-            "form_email": false,
-            "form_message": true
+            "title": "This is title",
+            "description": "This is description"
           }
         }
       },
-      "block_order": [
-        "template--19027465503032__816ab581-984f-40df-9c40-06269c9f02d3-1683544726ad7ace12-0",
-        "f6947ed3-624f-4a7c-9e40-4b0a67f47675"
-      ],
-      "settings": {
-      }
+      "block_order": ["box"]
     }
   },
   "order": [
     "image_hero",
     "column-hero",
     "8433263c-1b01-421c-9c77-2909e3ad28d3",
-    "816ab581-984f-40df-9c40-06269c9f02d3"
+    "column-section"
   ]
 }
