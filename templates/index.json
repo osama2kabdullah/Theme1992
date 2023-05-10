@@ -93,6 +93,38 @@
       "settings": {
       }
     },
+    "984444b3-e8f7-47b6-afa2-aae346e3cbdf": {
+      "type": "column-hero",
+      "blocks": {
+        "template--19027465503032__984444b3-e8f7-47b6-afa2-aae346e3cbdf-1683712654c5e7b49b-1": {
+          "type": "youtube_video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=fdEu2zHRMIc",
+            "video_title": "Taito ailam shagore",
+            "video_description": "Tashrif khan song"
+          }
+        },
+        "template--19027465503032__984444b3-e8f7-47b6-afa2-aae346e3cbdf-1683712654c5e7b49b-0": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "text_or_input": "text",
+            "image_text_alignment": "left",
+            "title": "This is Image title",
+            "image_description": "This is image description",
+            "redirect_url": "",
+            "form_name": true,
+            "form_email": false,
+            "form_message": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19027465503032__984444b3-e8f7-47b6-afa2-aae346e3cbdf-1683712654c5e7b49b-1",
+        "template--19027465503032__984444b3-e8f7-47b6-afa2-aae346e3cbdf-1683712654c5e7b49b-0"
+      ],
+      "settings": {
+      }
+    },
     "column-section": {
       "type": "column-section",
       "blocks": {
@@ -128,6 +160,7 @@
     "image_hero",
     "column-hero",
     "8433263c-1b01-421c-9c77-2909e3ad28d3",
+    "984444b3-e8f7-47b6-afa2-aae346e3cbdf",
     "column-section"
   ]
 }
