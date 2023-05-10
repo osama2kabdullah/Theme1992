@@ -1,3 +1,7 @@
+### Use this theme in your shopify store
+1. download the zip file of `master` branch code
+2. upload the zip file in your store. so simple and easy.
+
 ### Benifits of connect Shopify github app in this repository
 1. Update code that edited by store admin. the code committed by `shopify bot`
 
@@ -51,7 +55,7 @@
     └── reset_password.liquid
 ```
 4. After create requred folders and files. You should have a shopify partner account and a store.
-5. Then invoke this command in your terminal oe powershell from the root directory of your theme project.
+5. Then invoke this command in your terminal or powershell from the root directory of your theme project.
 ```
 shopify theme dev
 ```

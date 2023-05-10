@@ -3,13 +3,13 @@
     {% case block.type %}
       {% when 'image_with_text_or_input' %}
         <div class="relative w-full">
-            <div class="{% if block.settings.image_text_alignment == "center" %} pb-12 {% else %} pl-24 {% endif %}">
-              <img
-                class="{% if block.settings.image_text_alignment == "center" %} w-full {% endif %}"
-                src="{{ block.settings.image | img_url: "1224x620" }}"
-                alt=""
-              >
-            </div>
+          <div class="{% if block.settings.image_text_alignment == "center" %} pb-12 {% else %} pl-24 {% endif %}">
+            <img
+              class="{% if block.settings.image_text_alignment == "center" %} w-full {% endif %}"
+              src="{{ block.settings.image | img_url: "1224x620" }}"
+              alt=""
+            >
+          </div>
 
           {% comment %}
             ---if alignment center add this classes---
@@ -92,6 +92,22 @@
           <div class="flex justify-center gap-3">
             <img src="https://picsum.photos/id/139/250/300" alt="">
             <img src="https://picsum.photos/id/140/250/300" alt="">
+          </div>
+        </div>
+
+      {% when 'blogs' %}
+        <div class="w-full flex gap-3">
+          <div>
+            <img class="w-full" src="https://picsum.photos/560/315" alt="">
+
+            <h3 class="text-2xl">Blog title</h3>
+            <p>Blog description</p>
+          </div>
+          <div>
+            <img class="w-full" src="https://picsum.photos/560/315" alt="">
+
+            <h3 class="text-2xl">Blog title</h3>
+            <p>Blog description</p>
           </div>
         </div>
 
@@ -254,6 +270,19 @@
           "id": "limit",
           "label": "Number of collection",
           "default": 8
+        }
+      ]
+    },
+    {
+      "name": "Blogs",
+      "type": "blogs",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "number",
+          "id": "limit",
+          "label": "Number of blogs",
+          "default": 2
         }
       ]
     },
