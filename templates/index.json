@@ -104,10 +104,20 @@
             "redirect_url": "",
             "text_alignment": "center"
           }
+        },
+        "73232b3d-933f-4173-b496-36abd0cf9b76": {
+          "type": "box",
+          "settings": {
+            "title": "This is title",
+            "description": "This is description",
+            "redirect_url": "",
+            "text_alignment": "center"
+          }
         }
       },
       "block_order": [
-        "box"
+        "box",
+        "73232b3d-933f-4173-b496-36abd0cf9b76"
       ],
       "settings": {
         "border": 1
