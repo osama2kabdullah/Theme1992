@@ -107,10 +107,11 @@
         "template--19027465503032__984444b3-e8f7-47b6-afa2-aae346e3cbdf-1683712654c5e7b49b-0": {
           "type": "image_with_text_or_input",
           "settings": {
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "text_or_input": "text",
             "image_text_alignment": "left",
-            "title": "This is Image title",
-            "image_description": "This is image description",
+            "title": "Women inside ice",
+            "image_description": "Winter collection fasion",
             "redirect_url": "",
             "form_name": true,
             "form_email": false,
