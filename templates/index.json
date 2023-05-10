@@ -142,25 +142,10 @@
             "form_email": false,
             "form_message": true
           }
-        },
-        "74e93471-f5b6-4210-b6b0-e5b06a866b09": {
-          "type": "image_with_text_or_input",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/woman-in-the-city_925x_794430b8-538a-42bb-9c21-4ff0c79b29a1.jpg",
-            "text_or_input": "text",
-            "image_text_alignment": "center",
-            "title": "Classic top",
-            "image_description": "For jogging women",
-            "redirect_url": "shopify:\/\/products\/ocean-blue-shirt",
-            "form_name": true,
-            "form_email": false,
-            "form_message": true
-          }
         }
       },
       "block_order": [
-        "template--19027465503032__1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54-1683712654c5e7b49b-0",
-        "74e93471-f5b6-4210-b6b0-e5b06a866b09"
+        "template--19027465503032__1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54-1683712654c5e7b49b-0"
       ],
       "settings": {
       }
