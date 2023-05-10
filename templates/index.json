@@ -51,9 +51,9 @@
             "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
             "text_or_input": "text",
             "image_text_alignment": "left",
-            "title": "This is Image title",
-            "image_description": "This is image description",
-            "redirect_url": "",
+            "title": "Lather jacket",
+            "image_description": "Winter best jacket",
+            "redirect_url": "shopify:\/\/products\/black-leather-bag",
             "form_name": true,
             "form_email": false,
             "form_message": true
