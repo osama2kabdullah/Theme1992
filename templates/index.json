@@ -126,6 +126,44 @@
       "settings": {
       }
     },
+    "1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54": {
+      "type": "column-hero",
+      "blocks": {
+        "template--19027465503032__1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54-1683712654c5e7b49b-0": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/womens-red-t-shirt_925x_f1cdac6e-fc6d-4752-ad26-0186d32684bd.jpg",
+            "text_or_input": "text",
+            "image_text_alignment": "center",
+            "title": "Red t-shirt",
+            "image_description": "TWomen collection",
+            "redirect_url": "shopify:\/\/collections\/girl",
+            "form_name": true,
+            "form_email": false,
+            "form_message": true
+          }
+        },
+        "74e93471-f5b6-4210-b6b0-e5b06a866b09": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "text_or_input": "text",
+            "image_text_alignment": "left",
+            "title": "This is Image title",
+            "image_description": "This is image description",
+            "redirect_url": "",
+            "form_name": true,
+            "form_email": false,
+            "form_message": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19027465503032__1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54-1683712654c5e7b49b-0",
+        "74e93471-f5b6-4210-b6b0-e5b06a866b09"
+      ],
+      "settings": {
+      }
+    },
     "column-section": {
       "type": "column-section",
       "blocks": {
@@ -162,6 +200,7 @@
     "column-hero",
     "8433263c-1b01-421c-9c77-2909e3ad28d3",
     "984444b3-e8f7-47b6-afa2-aae346e3cbdf",
+    "1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54",
     "column-section"
   ]
 }
