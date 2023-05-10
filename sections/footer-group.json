@@ -2,14 +2,99 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
-    "footer": {
-      "type": "footer",
-      "settings": {}
-    },
     "newsletter-signup": {
       "type": "newsletter-signup",
-      "settings": {}
+      "blocks": {
+        "e318ebcb-ae85-415d-a85a-a83352729b53": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/red-plaid-shirt_925x_0ea42fa0-c184-4ca1-b5ab-41082dca97a3.jpg"
+          }
+        },
+        "880bfc9d-fe00-4a44-a8de-fdc87a641d8d": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/smiling-woman-poses_925x_286d1558-5ed6-4356-b3be-abd9f5942afb.jpg"
+          }
+        },
+        "e49852f2-4e7f-45bb-ba95-d09b0d3779d3": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/smiling-woman-poses_925x_286d1558-5ed6-4356-b3be-abd9f5942afb.jpg"
+          }
+        },
+        "b598a0fc-fb37-48af-955a-030a7d2680db": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/man-adjusts-blue-tuxedo-bowtie_925x_2d003efb-3b2a-48e1-89bc-e043674ff2be.jpg"
+          }
+        },
+        "aaaefcad-5db1-4f88-a83a-4394e85aa594": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/womens-red-t-shirt_925x_f1cdac6e-fc6d-4752-ad26-0186d32684bd.jpg"
+          }
+        },
+        "12b63973-20ce-4c73-870b-c157c7607d8c": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/mens-fall-fashion-jacket_925x_f81c23b2-1ff8-4d62-8a9e-6a152ba25366.jpg"
+          }
+        },
+        "5ee4d351-7f7d-4161-8f4c-aef7d3ef51de": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture_925x_ad29e9ac-332a-4469-9c0c-fbb85b15a420.jpg"
+          }
+        },
+        "58d764c8-85c0-4828-8702-3ea5f62dfe87": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/urban-fashion_925x_0a1b204c-9d14-4f02-b616-f404e51e7f04.jpg"
+          }
+        },
+        "04b64537-79a3-4e4b-ac1b-5f33e79e677b": {
+          "type": "grid_images",
+          "settings": {
+            "image_url": "",
+            "grid_image": "shopify:\/\/shop_images\/black-bag-over-the-shoulder_925x_4859e333-af59-4dbf-94e2-4583025e25bf.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e318ebcb-ae85-415d-a85a-a83352729b53",
+        "880bfc9d-fe00-4a44-a8de-fdc87a641d8d",
+        "e49852f2-4e7f-45bb-ba95-d09b0d3779d3",
+        "b598a0fc-fb37-48af-955a-030a7d2680db",
+        "aaaefcad-5db1-4f88-a83a-4394e85aa594",
+        "12b63973-20ce-4c73-870b-c157c7607d8c",
+        "5ee4d351-7f7d-4161-8f4c-aef7d3ef51de",
+        "58d764c8-85c0-4828-8702-3ea5f62dfe87",
+        "04b64537-79a3-4e4b-ac1b-5f33e79e677b"
+      ],
+      "settings": {
+        "show_image_grid": true,
+        "color": "bg-[#989898] text-[#fff]",
+        "title": "Newslatter",
+        "newslatter_description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum eligendi sit sed"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+      }
     }
   },
-  "order": ["newsletter-signup", "footer"]
+  "order": [
+    "newsletter-signup",
+    "footer"
+  ]
 }
