@@ -6,31 +6,31 @@
         "00ebd720-47c3-4e73-989d-59cfc283de7a": {
           "type": "banner",
           "settings": {
-            "hero_image": "shopify://shop_images/professional-smiling-woman.jpg",
-            "redirect_url": "",
-            "banner_title": "New this week",
-            "banner_subtitle": "Spring Girls",
-            "banner_description": "Lookbook 2015"
+            "hero_image": "shopify:\/\/shop_images\/man-adjusts-blue-tuxedo-bowtie_925x_2d003efb-3b2a-48e1-89bc-e043674ff2be.jpg",
+            "redirect_url": "shopify:\/\/products\/blue-silk-tuxedo",
+            "banner_title": "Man adjusts blue",
+            "banner_subtitle": "Tuxedo bowtie",
+            "banner_description": "Boy collection"
           }
         },
         "f2cdcd51-59c3-4baf-a543-12f43e08380b": {
           "type": "banner",
           "settings": {
-            "hero_image": "shopify://shop_images/rack-of-womens-clothing.jpg",
-            "redirect_url": "",
-            "banner_title": "New this week",
-            "banner_subtitle": "Spring Girls",
-            "banner_description": "Lookbook 2015"
+            "hero_image": "shopify:\/\/shop_images\/leather-jacket-and-tea_925x_7c1fd253-b576-4f1a-aa24-626569c8ae26.jpg",
+            "redirect_url": "shopify:\/\/products\/classic-leather-jacket",
+            "banner_title": "Classing lather jacket",
+            "banner_subtitle": "Winter Girls",
+            "banner_description": "Lather"
           }
         },
         "2daf0829-eea3-4931-9393-3653154f41b9": {
           "type": "banner",
           "settings": {
-            "hero_image": "shopify://shop_images/osama-coding.png",
-            "redirect_url": "",
-            "banner_title": "New this week",
-            "banner_subtitle": "Spring Girls",
-            "banner_description": "Lookbook 2015"
+            "hero_image": "shopify:\/\/shop_images\/menswear-blue-zip-up-jacket_925x_ff8133e5-7a97-413b-a176-8b35d5e95459.jpg",
+            "redirect_url": "shopify:\/\/products\/zipped-jacket",
+            "banner_title": "Zipped jacket",
+            "banner_subtitle": "Winter boy",
+            "banner_description": "Fasion 2023"
           }
         }
       },
@@ -39,7 +39,8 @@
         "f2cdcd51-59c3-4baf-a543-12f43e08380b",
         "2daf0829-eea3-4931-9393-3653154f41b9"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "column-hero": {
       "type": "column-hero",
@@ -47,8 +48,9 @@
         "image_with_text_or_input": {
           "type": "image_with_text_or_input",
           "settings": {
-            "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
             "text_or_input": "text",
+            "image_text_alignment": "left",
             "title": "This is Image title",
             "image_description": "This is image description",
             "redirect_url": "",
@@ -60,14 +62,18 @@
         "youtube_video": {
           "type": "youtube_video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=eXBkFr_s3Bc",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=eXBkFr_s3Bc",
             "video_title": "Edit title",
             "video_description": "Edit description"
           }
         }
       },
-      "block_order": ["image_with_text_or_input", "youtube_video"],
-      "settings": {}
+      "block_order": [
+        "image_with_text_or_input",
+        "youtube_video"
+      ],
+      "settings": {
+      }
     },
     "8433263c-1b01-421c-9c77-2909e3ad28d3": {
       "type": "column-hero",
@@ -83,8 +89,9 @@
         "template--18953686909240__8433263c-1b01-421c-9c77-2909e3ad28d3-1683469542d7173309-0": {
           "type": "image_with_text_or_input",
           "settings": {
-            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "text_or_input": "text",
+            "image_text_alignment": "left",
             "title": "This is Image title",
             "image_description": "This is image description",
             "redirect_url": "",
@@ -98,23 +105,28 @@
         "a161c67c-20fc-4928-a65c-7ad86e9cbe17",
         "template--18953686909240__8433263c-1b01-421c-9c77-2909e3ad28d3-1683469542d7173309-0"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "column-section": {
       "type": "column-section",
-      "settings": {
-        "border": 1
-      },
       "blocks": {
         "box": {
           "type": "box",
           "settings": {
             "title": "This is title",
-            "description": "This is description"
+            "description": "This is description",
+            "redirect_url": "",
+            "text_alignment": "center"
           }
         }
       },
-      "block_order": ["box"]
+      "block_order": [
+        "box"
+      ],
+      "settings": {
+        "border": 1
+      }
     }
   },
   "order": [
