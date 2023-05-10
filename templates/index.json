@@ -126,6 +126,24 @@
       "settings": {
       }
     },
+    "2afc2c6b-1dfa-4c02-8d97-97b7ee5a7bdb": {
+      "type": "column-hero",
+      "blocks": {
+        "1396d535-bfd4-4967-8e12-60d2422fe812": {
+          "type": "collections",
+          "settings": {
+            "title": "Boy",
+            "description": "Boy collection",
+            "limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "1396d535-bfd4-4967-8e12-60d2422fe812"
+      ],
+      "settings": {
+      }
+    },
     "1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54": {
       "type": "column-hero",
       "blocks": {
@@ -179,24 +197,6 @@
       "settings": {
         "border": 0
       }
-    },
-    "2afc2c6b-1dfa-4c02-8d97-97b7ee5a7bdb": {
-      "type": "column-hero",
-      "blocks": {
-        "1396d535-bfd4-4967-8e12-60d2422fe812": {
-          "type": "collections",
-          "settings": {
-            "title": "Boy",
-            "description": "Boy collection",
-            "limit": 4
-          }
-        }
-      },
-      "block_order": [
-        "1396d535-bfd4-4967-8e12-60d2422fe812"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -204,8 +204,8 @@
     "column-hero",
     "8433263c-1b01-421c-9c77-2909e3ad28d3",
     "984444b3-e8f7-47b6-afa2-aae346e3cbdf",
+    "2afc2c6b-1dfa-4c02-8d97-97b7ee5a7bdb",
     "1b75c8b3-5b7d-42fe-82d8-a1c19a7bfd54",
-    "column-section",
-    "2afc2c6b-1dfa-4c02-8d97-97b7ee5a7bdb"
+    "column-section"
   ]
 }
