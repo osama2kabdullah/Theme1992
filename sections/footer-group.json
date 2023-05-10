@@ -89,6 +89,82 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "d2efc74b-3c5c-454f-9c4f-77b43ef7bc7b": {
+          "type": "left_link",
+          "settings": {
+            "left_url": "",
+            "left_url_label": ""
+          }
+        },
+        "dabff60f-8af3-47f2-b736-70bfdaec3600": {
+          "type": "left_link",
+          "settings": {
+            "left_url": "",
+            "left_url_label": ""
+          }
+        },
+        "60015083-9828-4bbe-8fed-7014db271e0c": {
+          "type": "left_link",
+          "settings": {
+            "left_url": "",
+            "left_url_label": ""
+          }
+        },
+        "4bc432ec-7ea2-45f3-b473-b6327a1b0460": {
+          "type": "left_link",
+          "settings": {
+            "left_url": "",
+            "left_url_label": ""
+          }
+        },
+        "87dfc81e-c99a-4146-ba82-649251fc8171": {
+          "type": "right_link",
+          "settings": {
+            "right_url": "",
+            "right_url_label": ""
+          }
+        },
+        "56dd322b-d785-4c7d-8c14-744cda48661d": {
+          "type": "right_link",
+          "settings": {
+            "right_url": "",
+            "right_url_label": ""
+          }
+        },
+        "10e96a54-e687-4195-923f-3b5135f7afde": {
+          "type": "right_link",
+          "settings": {
+            "right_url": "",
+            "right_url_label": ""
+          }
+        },
+        "8cdd1635-4364-4a3b-85cf-2076038eee21": {
+          "type": "right_link",
+          "settings": {
+            "right_url": "",
+            "right_url_label": ""
+          }
+        },
+        "75749005-d3e7-4ebd-8a09-cdf0222ae0fc": {
+          "type": "right_link",
+          "settings": {
+            "right_url": "",
+            "right_url_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "d2efc74b-3c5c-454f-9c4f-77b43ef7bc7b",
+        "dabff60f-8af3-47f2-b736-70bfdaec3600",
+        "60015083-9828-4bbe-8fed-7014db271e0c",
+        "4bc432ec-7ea2-45f3-b473-b6327a1b0460",
+        "87dfc81e-c99a-4146-ba82-649251fc8171",
+        "56dd322b-d785-4c7d-8c14-744cda48661d",
+        "10e96a54-e687-4195-923f-3b5135f7afde",
+        "8cdd1635-4364-4a3b-85cf-2076038eee21",
+        "75749005-d3e7-4ebd-8a09-cdf0222ae0fc"
+      ],
       "settings": {
       }
     }
