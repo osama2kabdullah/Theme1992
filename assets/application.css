@@ -666,10 +666,6 @@ video {
   height: 620px !important;
 }
 
-.h-32 {
-  height: 8rem !important;
-}
-
 .w-16 {
   width: 4rem !important;
 }
@@ -693,14 +689,6 @@ video {
 
 .w-full {
   width: 100% !important;
-}
-
-.w-32 {
-  width: 8rem !important;
-}
-
-.w-64 {
-  width: 16rem !important;
 }
 
 .transform {
