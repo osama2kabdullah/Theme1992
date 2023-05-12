@@ -33,7 +33,7 @@
               <img class="w-16 h-16" src="{{block.settings.image | img_url : "620x620"}}" alt="">
             {% endunless %}
             <div>
-              <h1 class="text-xl">{{ block.settings.title }}</h1>
+              <h1 class="text-2xl font-bold">{{ block.settings.title }}</h1>
               <p>{{ block.settings.description }}</p>
               <a href="{{block.settings.redirect_url}}">>></a>
             </div>
@@ -106,6 +106,16 @@
             }
           ],
           "default": "center"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Column section",
+      "blocks": [
+        {
+          "type": "box"
         }
       ]
     }
