@@ -14,5 +14,8 @@
       }
     }
   },
-  "order": ["featured", "collection"]
+  "order": [
+    "featured",
+    "collection"
+  ]
 }
