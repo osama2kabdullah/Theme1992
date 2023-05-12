@@ -25,15 +25,16 @@
             {% else %}
               {% form 'customer' %}
                 {{ form.errors | default_errors }}
-                <div class="grid grid-cols-2">
+                <div class="flex gap-5 flex-col ">
+                  {% assign css = "border-2 border-black p-2" %}
                   {% if block.settings.form_name == true %}
-                    <input type="text" placeholder="Name">
+                    <input class="{{css}}" type="text" placeholder="Name">
                   {% endif %}
                   {% if block.settings.form_email == true %}
-                    <input type="email" placeholder="Email">
+                    <input class="{{css}}" type="email" placeholder="Email">
                   {% endif %}
                   {% if block.settings.form_message == true %}
-                    <textarea class="col-span-2" name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea placeholder="Message" class="{{css}}" name="message" id="message" cols="30" rows="5"></textarea>
                   {% endif %}
 
                   {% if block.settings.form_name == false
@@ -42,7 +43,7 @@
                   %}
                     <p>Your form goes here</p>
                   {% else %}
-                    <input type="submit" value="submit">
+                    <input class="p-2 bg-black text-white cursor-pointer w-[50%]" type="submit" value="submit">
                   {% endif %}
                 </div>
               {% endform %}

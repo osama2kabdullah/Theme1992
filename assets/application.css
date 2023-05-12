@@ -584,6 +584,10 @@ video {
   left: 30% !important;
 }
 
+.left-\[50\%\] {
+  left: 50% !important;
+}
+
 .right-0 {
   right: 0px !important;
 }
@@ -602,6 +606,10 @@ video {
 
 .top-\[40\%\] {
   top: 40% !important;
+}
+
+.top-\[50\%\] {
+  top: 50% !important;
 }
 
 .z-\[1\] {
@@ -624,6 +632,11 @@ video {
 .my-12 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
+}
+
+.my-24 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
 }
 
 .mt-4 {
@@ -666,10 +679,6 @@ video {
   height: 620px !important;
 }
 
-.h-32 {
-  height: 8rem !important;
-}
-
 .w-16 {
   width: 4rem !important;
 }
@@ -686,6 +695,10 @@ video {
   width: 1224px !important;
 }
 
+.w-\[50\%\] {
+  width: 50% !important;
+}
+
 .w-fit {
   width: -moz-fit-content !important;
   width: fit-content !important;
@@ -693,14 +706,6 @@ video {
 
 .w-full {
   width: 100% !important;
-}
-
-.w-32 {
-  width: 8rem !important;
-}
-
-.w-64 {
-  width: 16rem !important;
 }
 
 .transform {
@@ -711,12 +716,12 @@ video {
   cursor: pointer !important;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
 }
 
 .flex-row {
@@ -725,6 +730,10 @@ video {
 
 .flex-row-reverse {
   flex-direction: row-reverse !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
 }
 
 .items-end {
@@ -783,6 +792,15 @@ video {
   gap: 5px !important;
 }
 
+.gap-x-3 {
+  -moz-column-gap: 0.75rem !important;
+       column-gap: 0.75rem !important;
+}
+
+.gap-y-12 {
+  row-gap: 3rem !important;
+}
+
 .overflow-hidden {
   overflow: hidden !important;
 }
@@ -793,6 +811,15 @@ video {
 
 .border {
   border-width: 1px !important;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-black {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity)) !important;
 }
 
 .bg-\[\#989898\] {
@@ -934,6 +961,10 @@ video {
   line-height: 1.75rem !important;
 }
 
+.font-bold {
+  font-weight: 700 !important;
+}
+
 .leading-tight {
   line-height: 1.25 !important;
 }
@@ -951,6 +982,10 @@ video {
 .text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.underline {
+  text-decoration-line: underline !important;
 }
 
 .filter {
