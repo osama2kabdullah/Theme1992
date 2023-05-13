@@ -1,0 +1,55 @@
+{
+  "sections": {
+    "hero": {
+      "type": "column-hero",
+      "blocks": {
+        "image_with_text_or_input": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "text_or_input": "text",
+            "image_text_alignment": "center",
+            "title": "Contact page",
+            "image_description": "To contact with us"
+          }
+        }
+      }
+    },
+    "form": {
+      "type": "column-hero",
+      "blocks": {
+        "image_with_text_or_input": {
+          "type": "image_with_text_or_input",
+          "settings": {
+            "text_or_input": "input",
+            "image_text_alignment": "left",
+            "form_name": false,
+            "form_email": true,
+            "form_message": true
+          }
+        },
+        "collections": {
+          "type": "collections",
+          "settings": {
+            "title": "Man",
+            "description": "Winter 2015",
+            "limit": 2
+          }
+        }
+      },
+      "order": ["image_with_text_or_input", "collections"]
+    },
+    "text-grid": {
+      "type": "column-section",
+      "blocks": {
+        "block-1": {
+          "type": "box"
+        },
+        "block-2": {
+          "type": "box"
+        }
+      },
+      "order": ["block-1", "block-2"]
+    }
+  },
+  "order": ["hero", "form", "text-grid"]
+}
